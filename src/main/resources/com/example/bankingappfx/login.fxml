@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.bankingappfx.LoginContoller"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="800.0" style="-fx-background-color: white;">
+    <children>
+        <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="70.0" layoutY="10.0">
+            <image>
+                <Image url="@../icons/logo.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="200.0" layoutY="40.0" prefHeight="40.0" prefWidth="450.0" style="-fx-font-family: 'Osward'; -fx-font-size: 38; -fx-font-weight: bold;" text="WELCOME TO ATM" />
+        <Label layoutX="125.0" layoutY="150.0" prefHeight="30.0" prefWidth="375.0" style="-fx-font-family: 'Raleway'; -fx-font-size: 28; -fx-font-weight: bold;" text="Card No:" />
+        <TextField layoutX="300.0" layoutY="150.0" prefHeight="30.0" prefWidth="230.0" style="-fx-font-family: Arial; -fx-font-size: 14; -fx-font-weight: bold;" />
+        <Label layoutX="125.0" layoutY="220.0" prefHeight="30.0" prefWidth="375.0" style="-fx-font-family: 'Raleway'; -fx-font-size: 28; -fx-font-weight: bold;" text="PIN:" />
+        <PasswordField layoutX="300.0" layoutY="220.0" prefHeight="30.0" prefWidth="230.0" style="-fx-font-family: Arial; -fx-font-size: 14; -fx-font-weight: bold;" />
+        <Button layoutX="300.0" layoutY="300.0" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-text-fill: white;" text="SIGN IN">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="430.0" layoutY="300.0" minWidth="100.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-text-fill: white;" text="CLEAR">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="300.0" layoutY="350.0" prefHeight="30.0" prefWidth="230.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-text-fill: white;" text="SIGN UP">
+            <font>
+                <Font name="Arial" size="14.0" />
+            </font>
+        </Button>
+    </children>
+
+
+</AnchorPane>
