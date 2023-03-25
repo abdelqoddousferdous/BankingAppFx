@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.bankingappfx.FirstSignup"
-            prefHeight="400.0" prefWidth="600.0">
+            prefHeight="600.0" prefWidth="800.0">
+    <children>
+    <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="20.0" layoutY="0.0" preserveRatio="true">
+        <image>
+            <Image url="@../Bank/icons/logo.jpg" />
+        </image>
+    </ImageView>
+    <Label layoutX="140.0" layoutY="20.0" prefHeight="40.0" prefWidth="600.0" text="APPLICATION FORM NO. {first}" textFill="#000000">
+        <font>
+            <Font name="Raleway" size="38.0" />
+        </font>
+    </Label>
+    <Label layoutX="290.0" layoutY="80.0" prefHeight="30.0" prefWidth="600.0" text="Page 1: Personal Details" textFill="#000000">
+        <font>
+            <Font name="Raleway" size="22.0" />
+        </font>
+    </Label>
+    <Label layoutX="20.0" layoutY="140.0" prefHeight="30.0" prefWidth="120.0" text="Name:" textFill="#000000">
+        <font>
+            <Font name="Raleway" size="20.0" />
+        </font>
+    </Label>
+    <TextField layoutX="140.0" layoutY="140.0" prefHeight="30.0" prefWidth="300.0">
+        <font>
+            <Font name="Raleway" size="14.0" />
+        </font>
+    </TextField>
+    <Label layoutX="20.0" layoutY="180.0" prefHeight="30.0" prefWidth="160.0" text="Father's Name:" textFill="#000000">
+        <font>
+            <Font name="Raleway" size="20.0" />
+        </font>
+    </Label>
+    <TextField layoutX="200.0" layoutY="180.0" prefHeight="30.0" prefWidth="240.0">
+        <font>
+            <Font name="Raleway" size="14.0" />
+        </font>
+    </TextField>
+    <Label layoutX="20.0" layoutY="220.0" prefHeight="30.0" prefWidth="160.0" text="Date of Birth:" textFill="#000000">
+        <font>
+            <Font name="Raleway" size="20.0" />
+        </font>
+    </Label>
+    <DatePicker layoutX="140.0" layoutY="220.0" prefHeight="30.0" prefWidth="120.0" />
 
-    
+
+
 
 </AnchorPane>

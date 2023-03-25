@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.bankingappfx.ThirsSinup"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+    <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="150.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@../Bank/icons/logo.jpg" />
+        </image>
+    </ImageView>
+    <Label layoutX="327.0" layoutY="37.0" prefHeight="22.0" prefWidth="254.0" text="Page 3: Account Details">
+        <font>
+            <Font name="Raleway" size="22.0" />
+        </font>
+    </Label>
+    <Label layoutX="111.0" layoutY="123.0" prefHeight="26.0" prefWidth="157.0" text="Account Type:">
+        <font>
+            <Font name="Raleway" size="18.0" />
+        </font>
+    </Label>
+    <VBox layoutX="292.0" layoutY="123.0" prefHeight="132.0" prefWidth="287.0" spacing="10.0">
+        <children>
+            <RadioButton mnemonicParsing="false" text="Saving Account">
+                <font>
+                    <Font name="Raleway" size="16.0" />
+                </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Fixed Deposit Account">
+                <font>
+                    <Font name="Raleway" size="16.0" />
+                </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Current Account">
+                <font>
+                    <Font name="Raleway" size="16.0" />
+                </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Recurring Deposit Account">
+                <font>
+                    <Font name="Raleway" size="16.0" />
+                </font>
+            </RadioButton>
+        </children>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+    </VBox>
+    <Label layoutX="111.0" layoutY="274.0" prefHeight="26.0" prefWidth="157.0" text="Card Number:">
+        <font>
+            <Font name="Raleway" size="18.0" />
+        </font>
+    </Label>
+    <Label layoutX="292.0" layoutY="274.0" prefHeight="26.0" prefWidth="211.0" text="XXXX-XXXX-XXXX-4184">
+        <font>
+            <Font name="Raleway" size="18.0" />
+        </font>
+    </Label>
+    </children>
+
+</AnchorPane>

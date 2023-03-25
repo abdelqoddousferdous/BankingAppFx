@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.lang.String?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.bankingappfx.SecondSignup"
+            prefHeight="400.0" prefWidth="600.0">
+
+        <VBox spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox spacing="10.0">
+                    <ImageView fitHeight="100.0" fitWidth="100.0">
+                        <image>
+                            <Image url="@/Bank/icons/logo.jpg" />
+                        </image>
+                    </ImageView>
+                </HBox>
+                <Label text="Page 2: Additional Details">
+                    <font>
+                        <Font name="Raleway" size="22.0" />
+                    </font>
+                </Label>
+                <HBox spacing="10.0">
+                    <Label text="Category:" />
+                    <ComboBox fx:id="categoryComboBox" >
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Option 1" />
+                            <String fx:value="Option 2" />
+                            <String fx:value="Option 3" />
+                            <String fx:value="Option 4" />
+                        </FXCollections>
+                    </items>
+                    </ComboBox>
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="Income:" />
+                    <ComboBox fx:id="incomeComboBox" >
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Option 1" />
+                                <String fx:value="Option 2" />
+                                <String fx:value="Option 3" />
+                                <String fx:value="Option 4" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="Educational Qualification:" />
+                    <ComboBox fx:id="educationComboBox">
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Option 1" />
+                                <String fx:value="Option 2" />
+                                <String fx:value="Option 3" />
+                                <String fx:value="Option 4" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="Occupation:" />
+                    <ComboBox fx:id="occupationComboBox" >
+                        <items>
+                            <FXCollections fx:factory="observableArrayList">
+                                <String fx:value="Option 1" />
+                                <String fx:value="Option 2" />
+                                <String fx:value="Option 3" />
+                                <String fx:value="Option 4" />
+                            </FXCollections>
+                        </items>
+                    </ComboBox>
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="PAN Number:" />
+                    <TextField fx:id="panTextField" />
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="Aadhar Number:" />
+                    <TextField fx:id="aadharTextField" />
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="Senior Citizen:" />
+                    <RadioButton fx:id="yesSeniorCitizenRadioButton" text="Yes" />
+                    <RadioButton fx:id="noSeniorCitizenRadioButton" text="No" />
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="Existing Account:" />
+                    <RadioButton fx:id="yesExistingAccountRadioButton" text="Yes" />
+                    <RadioButton fx:id="noExistingAccountRadioButton" text="No" />
+                </HBox>
+                <HBox spacing="10.0">
+                    <Label text="Form No:" />
+                    <Label fx:id="formNoLabel" />
+                </HBox>
+                <Button fx:id="nextButton" text="Next">
+                    <font>
+                        <Font name="Raleway" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+
+        </VBox>
+
+
+</AnchorPane>
